@@ -51,8 +51,7 @@ public class ComposeActivity extends AppCompatActivity {
                             Intent i = new Intent();
                             i.putExtra("new_tweet", Parcels.wrap(tweet));
                             setResult(RESULT_OK, i);
-                            finish();
-
+                            onBackPressed();
                     }
 
                     @Override

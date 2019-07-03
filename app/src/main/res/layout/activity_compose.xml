@@ -46,7 +46,6 @@
         android:fontFamily="sans-serif-black"
         android:includeFontPadding="true"
         android:text="Tweet"
-        android:onClick="onClick"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
