@@ -1,6 +1,7 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
@@ -17,7 +18,11 @@ import com.bumptech.glide.request.target.BitmapImageViewTarget;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
+import org.parceler.Parcels;
+
 import java.util.List;
+
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> {
 
@@ -60,8 +65,20 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             }
         });
 
+        viewHolder.bReply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (context instanceof TimelineActivity) {
+                    String replyTo = viewHolder.tvUserName.getText().toString();
+                    ((TimelineActivity) context).replyTo(replyTo,
+                            mTweets.get(viewHolder.getAdapterPosition()).getUid());
+                }
+            }
+        });
+
         return viewHolder;
     }
+
 
     private void toggleRetweet(Button button, Boolean retweeted) {
         if (retweeted) {
@@ -106,7 +123,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         holder.tvProfileName.setText(tweet.getUser().getName());
         holder.tvBody.setText(tweet.getBody());
         holder.tvUserName.setText("@" + tweet.getUser().getScreenName());
-        holder.tvTime.setText(tweet.getRelativeTimeAgo());
+        holder.tvTime.setText(tweet.getCreatedAt());
         holder.tvRetweets.setText(Tweet.formatCount(tweet.getRetweetCount()));
         holder.tvFavorites.setText(Tweet.formatCount(tweet.getFavoriteCount()));
         holder.bFavorite.setBackgroundResource(initialFavorite(tweet.isFavorited()));
@@ -124,6 +141,16 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                         holder.ivProfileImage.setImageDrawable(circularBitmapDrawable);
                     }
                 });
+
+        if (tweet.getMedia().hasMedia()) {
+            Glide.with(context)
+                    .load(tweet.getMedia().getMediaUrl())
+                    .bitmapTransform(new RoundedCornersTransformation(context, 25, 0))
+                    .into(holder.ivTweetMedia);
+            holder.ivTweetMedia.setVisibility(View.VISIBLE);
+        } else {
+            holder.ivTweetMedia.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -132,9 +159,10 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
     }
 
     // Create ViewHolder class
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         public ImageView ivProfileImage;
+        public ImageView ivTweetMedia;
         public TextView tvProfileName;
         public TextView tvBody;
         public TextView tvUserName;
@@ -143,6 +171,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         public TextView tvFavorites;
         public Button bRetweet;
         public Button bFavorite;
+        public Button bReply;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -150,14 +179,35 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             // Perform findViewById lookups
 
             ivProfileImage = (ImageView) itemView.findViewById(R.id.ivProfileImage);
+            ivTweetMedia = (ImageView) itemView.findViewById(R.id.ivTweetMedia);
             tvProfileName = (TextView) itemView.findViewById(R.id.tvProfileName);
             tvBody = (TextView) itemView.findViewById(R.id.tvBody);
             tvUserName = (TextView) itemView.findViewById(R.id.tvUserName);
             tvTime = (TextView) itemView.findViewById(R.id.tvTime);
-            tvRetweets = (TextView) itemView.findViewById(R.id.tvRetweets);
+            tvRetweets = (TextView) itemView.findViewById(R.id.Retweets);
             tvFavorites = (TextView) itemView.findViewById(R.id.tvFavorites);
             bRetweet = (Button) itemView.findViewById(R.id.bRetweet);
             bFavorite = (Button) itemView.findViewById(R.id.bFavorite);
+            bReply = (Button) itemView.findViewById(R.id.bReply);
+
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            // Gets item position
+            int position = getAdapterPosition();
+            // Make sure the position is valid, i.e. actually exists in the view
+            if (position != RecyclerView.NO_POSITION) {
+                // Get the movie at the position, this won't work if the class is static
+                Tweet tweet = mTweets.get(position);
+                // Create intent for the new activity
+                Intent intent = new Intent(context, TweetDetailActivity.class);
+                // Serialize the movie using parceler, use its short name as a key
+                intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+                // Show the activity
+                context.startActivity(intent);
+            }
         }
     }
 

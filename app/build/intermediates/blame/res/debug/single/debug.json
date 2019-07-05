@@ -228,6 +228,10 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_america_anguilla"
     },
     {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/layout_activity_tweet_detail.xml.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/res/layout/activity_tweet_detail.xml"
+    },
+    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_america_havana.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_america_havana"
     },
@@ -316,16 +320,16 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_africa_accra.flat",
-        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_africa_accra"
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_africa_ouagadougou.flat",
+        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_africa_ouagadougou"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_africa_bamako.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_africa_bamako"
     },
     {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_africa_ouagadougou.flat",
-        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_africa_ouagadougou"
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_africa_accra.flat",
+        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_africa_accra"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_europe_jersey.flat",
@@ -402,6 +406,10 @@
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_back.png.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-ldpi/ic_back.png"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_pacific_honolulu.flat",
@@ -540,6 +548,10 @@
         "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_options.png"
     },
     {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_back.png.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-hdpi/ic_back.png"
+    },
+    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_america_antigua.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_america_antigua"
     },
@@ -572,16 +584,16 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
-        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
+        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
-        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
+        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -598,6 +610,10 @@
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_asia_oral.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_asia_oral"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_back.png.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_back.png"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat",
@@ -1128,6 +1144,10 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_africa_gaborone"
     },
     {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/layout_abs_layout_home.xml.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/res/layout/abs_layout_home.xml"
+    },
+    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
         "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/res/drawable-hdpi/ic_launcher.png"
     },
@@ -1204,12 +1224,12 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_asia_amman"
     },
     {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_pacific_tahiti.flat",
-        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_pacific_tahiti"
-    },
-    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_vector_image.png.flat",
         "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-ldpi/ic_vector_image.png"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_pacific_tahiti.flat",
+        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_pacific_tahiti"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
@@ -1244,12 +1264,12 @@
         "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_twitter.xml"
     },
     {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_vector_red_heart.png.flat",
-        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_vector_red_heart.png"
-    },
-    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_vector_image.png.flat",
         "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_vector_image.png"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_vector_red_heart.png.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_vector_red_heart.png"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_europe_helsinki.flat",
@@ -1626,6 +1646,10 @@
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_australia_hobart.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_australia_hobart"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_back.xml.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_back.xml"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -2064,6 +2088,10 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_america_guadeloupe"
     },
     {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_back.png.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_back.png"
+    },
+    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
@@ -2148,12 +2176,12 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_america_miquelon"
     },
     {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_location.png.flat",
         "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_vector_location.png"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -2170,10 +2198,6 @@
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_america_argentina_cordoba.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_america_argentina_cordoba"
-    },
-    {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/layout_abs_layout.xml.flat",
-        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/res/layout/abs_layout.xml"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/color-v21_abc_btn_colored_borderless_text_material.xml.flat",
@@ -2408,6 +2432,10 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_europe_bucharest"
     },
     {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_back.png.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_back.png"
+    },
+    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_america_bogota.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_america_bogota"
     },
@@ -2572,6 +2600,10 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/layout_action_view_progress.xml.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/res/layout/action_view_progress.xml"
+    },
+    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_africa_nairobi.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_africa_nairobi"
     },
@@ -2588,12 +2620,12 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_europe_prague.flat",
-        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_europe_prague"
-    },
-    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_america_el_salvador.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_america_el_salvador"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_europe_prague.flat",
+        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_europe_prague"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_europe_riga.flat",
@@ -2950,6 +2982,10 @@
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_etc_gmt_4.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_etc_gmt_4"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/layout_abs_layout_tweet.xml.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/res/layout/abs_layout_tweet.xml"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -3364,12 +3400,12 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_vector_image.png.flat",
         "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-mdpi/ic_vector_image.png"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_vector_red_heart.png.flat",
@@ -3528,16 +3564,16 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_vector_gif.png.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_vector_gif.png"
+    },
+    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/raw_joda_america_st_kitts.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/08ec0785c4454c7028a463b742dc6c64/res/raw/joda_america_st_kitts"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-v23/abc_control_background_material.xml"
-    },
-    {
-        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_vector_gif.png.flat",
-        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_vector_gif.png"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_dark.xml.flat",
@@ -3768,6 +3804,10 @@
         "source": "/Users/timisoetan/.gradle/caches/transforms-2/files-2.1/bba6f0c806fc48545881a934d4b07034/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable_progress.xml.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/res/drawable/progress.xml"
+    },
+    {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_twitter.png.flat",
         "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-mdpi/ic_twitter.png"
     },
@@ -3842,6 +3882,10 @@
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_vector_image.png.flat",
         "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_vector_image.png"
+    },
+    {
+        "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_back.png.flat",
+        "source": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/generated/res/pngs/debug/drawable-mdpi/ic_back.png"
     },
     {
         "merged": "/Users/timisoetan/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_compose.png.flat",

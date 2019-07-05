@@ -1,5 +1,6 @@
 package com.codepath.apps.restclienttemplate.models;
 
+import com.codepath.apps.restclienttemplate.TimeFormatter;
 import com.codepath.apps.restclienttemplate.TwitterApp;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
@@ -8,10 +9,6 @@ import org.json.JSONObject;
 import org.parceler.Parcel;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
 import java.util.Map;
 import java.util.NavigableMap;
 import java.util.TreeMap;
@@ -23,13 +20,17 @@ public class Tweet {
     private String body;
     private long uid; // Database ID for the tweet
     private User user;
-    private Date createdAt;
+    private String createdAt;
     private long retweetCount;
     private long favoriteCount;
     private boolean retweeted;
     private boolean favorited;
+    private Media media;
 
     private static final NavigableMap<Long, String> suffixes = new TreeMap<>();
+
+    public Tweet() {
+    }
 
     // Deserialize the JSON
     public static Tweet fromJSON(JSONObject jsonObject) throws JSONException, ParseException {
@@ -41,18 +42,20 @@ public class Tweet {
         // Extract the values from JSON
         tweet.body = jsonObject.getString("text");
         tweet.uid = jsonObject.getLong("id");
-        tweet.createdAt = parseTwitterDate(jsonObject.getString("created_at"));
+        tweet.createdAt = TimeFormatter.getTimeDifference(jsonObject.getString("created_at"));
         tweet.user = User.fromJSON(jsonObject.getJSONObject("user"));
         tweet.retweetCount = jsonObject.getLong("retweet_count");
         tweet.favoriteCount = jsonObject.getLong("favorite_count");
         tweet.retweeted = jsonObject.getBoolean("retweeted");
         tweet.favorited = jsonObject.getBoolean("favorited");
+        tweet.media = Media.fromJSON(jsonObject.getJSONObject("entities"));
 
         return tweet;
     }
 
+
     public void updateRetweetCount(JsonHttpResponseHandler handler) {
-        TwitterApp.getRestClient().retweet(uid, retweeted ^= true, handler);
+        TwitterApp.getRestClient().retweet(uid, retweeted = !retweeted, handler);
         if (retweeted) {
             retweetCount += 1;
         } else {
@@ -61,55 +64,11 @@ public class Tweet {
     }
 
     public void updateFavoriteCount(JsonHttpResponseHandler handler) {
-        TwitterApp.getRestClient().favorite(uid, favorited ^= true, handler);
+        TwitterApp.getRestClient().favorite(uid, favorited = !favorited, handler);
         if (favorited) {
             favoriteCount += 1;
         } else {
             favoriteCount -= 1;
-        }
-    }
-
-    public static Date parseTwitterDate(String rawJsonDate) throws ParseException {
-        String twitterFormat = "EEE MMM dd HH:mm:ss ZZZZZ yyyy";
-        SimpleDateFormat sf = new SimpleDateFormat(twitterFormat, Locale.ENGLISH);
-        sf.setLenient(true);
-            return sf.parse(rawJsonDate);
-    }
-
-    public String getRelativeTimeAgo() {
-        Calendar now = Calendar.getInstance();
-        Calendar then = Calendar.getInstance();
-
-        now.setTime(new Date());
-        then.setTime(createdAt);
-
-        // Get the represented date in milliseconds
-        long nowMs = now.getTimeInMillis();
-        long thenMs = then.getTimeInMillis();
-
-        // Calculate difference in milliseconds
-        long diff = nowMs - thenMs;
-
-        // Calculate difference in seconds
-        long diffMinutes = diff / (60 * 1000);
-        long diffHours = diff / (60 * 60 * 1000);
-        long diffDays = diff / (24 * 60 * 60 * 1000);
-
-        if (diffMinutes < 60) {
-            return diffMinutes + "m";
-
-        } else if (diffHours < 24) {
-            return diffHours + "h";
-
-        } else if (diffDays < 7) {
-            return diffDays + "d";
-
-        } else {
-
-            SimpleDateFormat todate = new SimpleDateFormat("MMM dd",
-                    Locale.ENGLISH);
-
-            return todate.format(createdAt);
         }
     }
 
@@ -137,6 +96,10 @@ public class Tweet {
         return body;
     }
 
+    public Media getMedia() {
+        return media;
+    }
+
     public long getUid() {
         return uid;
     }
@@ -145,7 +108,7 @@ public class Tweet {
         return user;
     }
 
-    public Date getCreatedAt() {
+    public String getCreatedAt() {
         return createdAt;
     }
 

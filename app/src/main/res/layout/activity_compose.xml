@@ -24,7 +24,6 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="16dp"
-                android:background="#1DA1F2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/etvComposeTweet" />
 
@@ -40,7 +39,7 @@
                 android:fontFamily="@font/helvetica_neue_medium"
                 android:hint="What's happening?"
                 android:inputType="textFilter|textMultiLine"
-                android:maxLength="240"
+                android:maxLength="280"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#AAB8C2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +122,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="4dp"
-            android:text="240"
+            android:text="280"
             android:textColor="#AAB8C2" />
     </RelativeLayout>
 

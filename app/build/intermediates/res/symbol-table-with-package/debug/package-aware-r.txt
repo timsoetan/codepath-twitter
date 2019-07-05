@@ -668,6 +668,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable button
+drawable ic_back
 drawable ic_compose
 drawable ic_launcher
 drawable ic_options
@@ -695,6 +696,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable progress
 drawable textlines
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -704,8 +706,10 @@ font helvetica_neue_medium
 id ALT
 id CTRL
 id ConstraintLayout
+id Dates
 id FUNCTION
 id META
+id Retweets
 id SHIFT
 id SYM
 id action0
@@ -789,6 +793,8 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ivBack
+id ivInvsible
 id ivProfileImage
 id ivTweetMedia
 id left
@@ -798,6 +804,7 @@ id listMode
 id list_item
 id media_actions
 id message
+id miActionProgress
 id miCompose
 id middle
 id multiply
@@ -810,6 +817,7 @@ id notification_main_column_container
 id packed
 id parent
 id parentPanel
+id pbProgressAction
 id percent
 id progress_circular
 id progress_horizontal
@@ -869,6 +877,7 @@ id tvBullet
 id tvCancel
 id tvCharCount
 id tvFavorites
+id tvFavorites2
 id tvProfileName
 id tvRetweets
 id tvTime
@@ -913,10 +922,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout abs_layout
+layout abs_layout_home
+layout abs_layout_tweet
+layout action_view_progress
 layout activity_compose
 layout activity_login
 layout activity_timeline
+layout activity_tweet_detail
 layout item_tweet
 layout notification_action
 layout notification_action_tombstone

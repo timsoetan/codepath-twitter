@@ -7,4 +7,10 @@
         app:showAsAction="ifRoom"
         android:title="Compose">
     </item>
+    <item
+        android:id="@+id/miActionProgress"
+        android:title="Loading..."
+        android:visible="false"
+        app:showAsAction="always"
+        app:actionLayout="@layout/action_view_progress" />
 </menu>
