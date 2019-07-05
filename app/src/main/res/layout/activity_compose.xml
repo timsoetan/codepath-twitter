@@ -1,52 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ivComposeTweet"
+    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ComposeActivity">
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/ivProfileImage"
-        android:layout_width="50dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0.05dp"
+            android:background="#14171A">
+
+            <ImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:background="#1DA1F2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/etvComposeTweet" />
+
+            <EditText
+                android:id="@+id/etvComposeTweet"
+                android:layout_width="332dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:hint="What's happening?"
+                android:inputType="textFilter|textMultiLine"
+                android:maxLength="240"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAB8C2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/bTweet"
+                android:layout_width="61dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:includeFontPadding="true"
+                android:text="Tweet"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:text="@android:string/cancel"
+                android:textColor="#1DA1F2"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#1DA1F2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bTweet"
-        app:layout_constraintVertical_bias="0.0"
-        />
+        android:layout_alignParentBottom="true"
+        android:background="#14171A">
 
-    <EditText
-        android:id="@+id/etvComposeTweet"
-        android:layout_width="332dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:hint="What's happening?"
-        android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
-        app:layout_constraintTop_toBottomOf="@+id/bTweet" />
+        <Button
+            android:id="@+id/bImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/ic_vector_image" />
 
-    <Button
-        android:id="@+id/bTweet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/button"
-        android:fontFamily="sans-serif-black"
-        android:includeFontPadding="true"
-        android:text="Tweet"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/bGif"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/bImage"
+            android:background="@drawable/ic_vector_gif" />
+
+        <Button
+            android:id="@+id/bLocation"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/bGif"
+            android:background="@drawable/ic_vector_location" />
+
+        <TextView
+            android:id="@+id/tvCharCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bImage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="240"
+            android:textColor="#AAB8C2" />
+    </RelativeLayout>
+
+</LinearLayout>

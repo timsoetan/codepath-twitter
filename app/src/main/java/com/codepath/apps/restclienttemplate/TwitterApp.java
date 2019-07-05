@@ -17,6 +17,7 @@ import com.facebook.stetho.Stetho;
  */
 public class TwitterApp extends Application {
 
+    private static Context context;
 
     MyDatabase myDatabase;
 
@@ -32,7 +33,7 @@ public class TwitterApp extends Application {
         Stetho.initializeWithDefaults(this);
     }
 
-    public static TwitterClient getRestClient(Context context) {
+    public static TwitterClient getRestClient() {
         return (TwitterClient) TwitterClient.getInstance(TwitterClient.class, context);
     }
 

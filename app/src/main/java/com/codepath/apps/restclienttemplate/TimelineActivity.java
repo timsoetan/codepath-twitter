@@ -3,6 +3,7 @@ package com.codepath.apps.restclienttemplate;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,22 +18,26 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.ParseException;
 import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
 public class TimelineActivity extends AppCompatActivity {
 
-    TwitterClient client;
-    TweetAdapter tweetAdapter;
-    ArrayList<Tweet> tweets;
-    RecyclerView rvTweets;
+    private TwitterClient client;
+    private TweetAdapter tweetAdapter;
+    private ArrayList<Tweet> tweets;
+    private RecyclerView rvTweets;
 
     private SwipeRefreshLayout swipeContainer;
     private final int COMPOSE_TWEET_REQUEST_CODE = 50;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
         swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
@@ -43,13 +48,9 @@ public class TimelineActivity extends AppCompatActivity {
             }
         });
 
-        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
-                android.R.color.holo_green_light,
-                android.R.color.holo_orange_light,
-                android.R.color.holo_red_light);
+        swipeContainer.setColorSchemeResources(R.color.twitter_blue);
 
-
-        client = TwitterApp.getRestClient(this);
+        client = TwitterApp.getRestClient();
 
         // Find the RecyclerView
         rvTweets = (RecyclerView) findViewById(R.id.rvTweet);
@@ -77,7 +78,7 @@ public class TimelineActivity extends AppCompatActivity {
                 populateTimeline();
                 swipeContainer.setRefreshing(false);
     }
-    
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -130,6 +131,8 @@ public class TimelineActivity extends AppCompatActivity {
                         tweets.add(tweet);
                         tweetAdapter.notifyItemInserted(tweets.size() - 1);
                     } catch (JSONException e) {
+                        e.printStackTrace();
+                    } catch (ParseException e) {
                         e.printStackTrace();
                     }
                 }

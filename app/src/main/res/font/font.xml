@@ -3,23 +3,7 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/avenirltstd_black" />
-    <font
-        android:fontStyle="normal"
-        android:fontWeight="400"
-        android:font="@font/avenirltstd_book" />
-    <font
-        android:fontStyle="normal"
-        android:fontWeight="400"
-        android:font="@font/avenirltstd_roman" />
-    <font
-        android:fontStyle="normal"
-        android:fontWeight="400"
         android:font="@font/helvetica_neue_bold" />
-    <font
-        android:fontStyle="normal"
-        android:fontWeight="400"
-        android:font="@font/helvetica_neue_light" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
