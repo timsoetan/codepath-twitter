@@ -38,7 +38,6 @@
         android:layout_marginTop="16dp"
         android:autoLink="all"
         android:linksClickable="true"
-        android:textColorLink="@color/twitter_blue"
         android:fontFamily="@font/helvetica_neue_medium"
         android:text="This is a sample tweet. This text is just hear to take up space for a potential layout design."
         android:textColor="#FFFFFF"
